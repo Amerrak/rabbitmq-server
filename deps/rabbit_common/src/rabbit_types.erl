@@ -216,7 +216,9 @@
                                   variable_map => map(),
                                   _ => _}).
 
--type(authz_context() :: map()).
+-type(authz_context() :: #{routing_key  => routing_key(),
+                                  variable_map => map(),
+                                  _ => _}).
 
 -type(permission_atom() :: 'configure' | 'write' | 'read').
 
